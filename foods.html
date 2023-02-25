@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book My Trip -Car rentals , offers</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./Images/logo.png">
+    <script src="./bootstrap.bundle.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+</head>
+
+<body>
+
+
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg bg-transparent">
+                        <a class="navbar-brand text-white" href="./index.html">Book
+                            <img src="./Images/logo.png" alt="logo">Trip
+                        </a>
+                        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#myNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="navbar-nav justify-content-center align-items-center">
+                                <i class="fa fa-globe mx-2"></i>
+                                <li class="nav-item">
+                                    <select class="bg-transparent form-control form-sm" id="selectbox">
+                                        <option value="">Select Country</option>
+                                        <option value="">India</option>
+                                        <option value="">USA</option>
+                                        <option value="">UK</option>
+                                    </select>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">List Your Property</a>
+                                </li>
+                                <li> <a class="btn" href="./registerLogin.html"><i class="fa fa-user-plus"
+                                            style="margin-right: 4px;"></i>Register</a>
+                                </li>
+                                <li> <a class="btn" href="./registerLogin.html"><i class="fa fa-sign-in"
+                                            style="margin-right: 4px;"></i>LogIn</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+
+            <div class="row py-2">
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn" href="./index.html">
+                        <i class="fa fa-bed"></i>
+                        Stays
+                    </a>
+                </div>
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn" href="flights.html">
+                        <i class="fa fa-plane"></i>
+                        Flight
+                    </a>
+                </div>
+
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn activeBtn">
+                        <i class="fa fa-cutlery"></i>
+                        Foods
+                    </a>
+                </div>
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn" href="./car.html">
+                        <i class="fa fa-car"></i>
+                        Car Rentals
+                    </a>
+                </div>
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn" href="./airpotTaxi.html">
+                        <i class="fa fa-taxi"></i>
+                        Airpot Taxi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main_div" class="pt-5 pb-4" style="background-color: #e7e7e7;;">
+        <div class="container">
+            <h2><b>Inspiration for your first order</b></h2>
+            <div class="row d-flex justify-content-around">
+                <div class="col-lg-2 col-md-4 col-6 mt-3 d-flex align-items-center flex-column">
+                    <img class="img-fluid fluidity" src="./Images/dg1.avif" alt="">
+                    <h5 class="mt-2">Biryani</h5>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3 d-flex align-items-center flex-column">
+                    <img class="img-fluid fluidity" src="./Images/dg2.avif" alt="">
+                    <h5 class="mt-2">Pizza</h5>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3 d-flex align-items-center flex-column">
+                    <img class="img-fluid fluidity" src="./Images/dg3.webp" alt="">
+                    <h5 class="mt-2">Chicken</h5>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3 d-flex align-items-center flex-column">
+                    <img class="img-fluid fluidity" src="./Images/dg4.avif" alt="">
+                    <h5 class="mt-2">Rolls</h5>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3 d-flex align-items-center flex-column">
+                    <img class="img-fluid fluidity" src="./Images/dg5.avif" alt="">
+                    <h5 class="mt-2">Burger</h5>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mt-3 d-flex align-items-center flex-column">
+                    <img class="img-fluid fluidity" src="./Images/dg6.avif" alt="">
+                    <h5 class="mt-2">Momos</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h2 class="mt-4"><b>Top Brands for you</b></h2>
+        <div class="row d-flex justify-content-around">
+            <div class="col-lg-2 col-md-4 col-6 mt-3 d-flex align-items-center flex-column">
+                <img class="img-fluid fluidity" src="./Images/bgt1.avif" alt="">
+                <h5 class="mt-2">WOW! Momo</h5>
+                <p class="text-muted">28 min</p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mt-3 d-flex align-items-center flex-column">
+                <img class="img-fluid fluidity" src="./Images/bgt2.avif" alt="">
+                <h5 class="mt-2">Domino's Pizza</h5>
+                <p class="text-muted"> 20 min</p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mt-3 d-flex align-items-center flex-column">
+                <img class="img-fluid fluidity" src="./Images/bgt3.webp" alt="">
+                <h5 class="mt-2">Chowman</h5>
+                <p class="text-muted">28 min</p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mt-3 d-flex align-items-center flex-column">
+                <img class="img-fluid fluidity" src="./Images/bgt4.avif" alt="">
+                <h5 class="mt-2">KFC</h5>
+                <p class="text-muted">32 min</p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mt-3 d-flex align-items-center flex-column">
+                <img class="img-fluid fluidity" src="./Images/bgt5.avif" alt="">
+                <h5 class="mt-2">Gupta Brothers</h5>
+                <p class="text-muted">17 min</p>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mt-3 d-flex align-items-center flex-column">
+                <img class="img-fluid fluidity" src="./Images/bgt6.avif" alt="">
+                <h5 class="mt-2">Arsalan</h5>
+                <p class="text-muted">33 min</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4" style=" background-color: #e7e7e7;">
+        <div class="container pt-5">
+            <h2><b>Daily Restaurants in kolkata</b></h2>
+            <div class="row py-2">
+
+                <div class="col-lg-4 col-sm-6 mt-4">
+                    <div class="card">
+                        <img src="./Images/fg3.avif" class="card-img" alt="...">
+                        <div class="card-img-overlay  d-flex align-items-end justify-content-between">
+                            <p class="text-white bg-primary img-food p-1"> <b>50% OFF upto 100 </b></p>
+                            <p class="img-food p-1" style="background-color: #e7e7e7;"><b>44 min</b></p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-between mt-2">
+                        <h5 class="col-8"> <b>Abar Khaboo</b></h5>
+                        <div class="col-2 d-flex justify-content-center align-items-center bg-success text-white fg">
+                            3.5<i class="fa fa-star" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="row d-flex justify-content-between text-muted">
+                        <p class="col-8 ">Biryani , North India ch...</p>
+                        <p class="col-4">₹150 for one</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mt-4">
+                    <div class="card">
+                        <img src="./Images/fg2.avif" class="card-img" alt="...">
+                        <div class="card-img-overlay  d-flex align-items-end justify-content-between">
+                            <p class="text-white bg-primary img-food p-1"> <b>50% OFF upto 100 </b></p>
+                            <p class="img-food p-1" style="background-color: #e7e7e7;"><b>44 min</b></p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-between mt-2">
+                        <h5 class="col-8"> <b>KFC</b></h5>
+                        <div class="col-2 d-flex justify-content-center align-items-center bg-success text-white fg">
+                            4.2<i class="fa fa-star" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="row d-flex justify-content-between text-muted">
+                        <p class="col-8 ">Chicken , South India ch...</p>
+                        <p class="col-4">₹200 for one</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mt-4">
+                    <div class="card">
+                        <img src="./Images/fg1.avif" class="card-img" alt="...">
+                        <div class="card-img-overlay  d-flex align-items-end justify-content-end">
+
+                            <p class="img-food p-1" style="background-color: #e7e7e7;"><b>20 min</b></p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-between mt-2">
+                        <h5 class="col-8"> <b>New Paul Dahaba</b></h5>
+                        <div class="col-2 d-flex justify-content-center align-items-center bg-success text-white fg">
+                            3.6<i class="fa fa-star" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="row d-flex justify-content-between text-muted">
+                        <p class="col-8 ">Biryani , North India ,Momos,ch...</p>
+                        <p class="col-4">₹100 for one</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-6 mt-4">
+                    <div class="card">
+                        <img src="./Images/fg10.avif" class="card-img" alt="...">
+                        <div class="card-img-overlay  d-flex align-items-end justify-content-between">
+                            <p class="text-white bg-primary img-food p-1"> <b>20% OFF upto 100 </b></p>
+
+                            <p class="img-food p-1" style="background-color: #e7e7e7;"><b>20 min</b></p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-between mt-2">
+                        <h5 class="col-8"> <b>Shimal Biryani</b></h5>
+                        <div class="col-2 d-flex justify-content-center align-items-center bg-success text-white fg">
+                            4.2<i class="fa fa-star" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="row d-flex justify-content-between text-muted">
+                        <p class="col-8 ">Biryani , Kebab,North Ind...</p>
+                        <p class="col-4">₹250 for one</p>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-sm-6 mt-4">
+                    <div class="card">
+                        <img src="./Images/fg4.avif" class="card-img" alt="...">
+                        <div class="card-img-overlay  d-flex align-items-end justify-content-between">
+                            <p class="text-white bg-primary img-food p-1"> <b>50% OFF upto 100 </b></p>
+
+                            <p class="img-food p-1" style="background-color: #e7e7e7;"><b>20 min</b></p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-between mt-2">
+                        <h5 class="col-8"> <b>Dhokla Dhaba</b></h5>
+                        <div class="col-2 d-flex justify-content-center align-items-center bg-success text-white fg">
+                            3.6<i class="fa fa-star" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="row d-flex justify-content-between text-muted">
+                        <p class="col-8 ">Dhokla, Sweets...</p>
+                        <p class="col-4">₹50 for one</p>
+                    </div>
+                </div>
+
+
+                <div class="col-lg-4 col-sm-6 mt-4">
+                    <div class="card">
+                        <img src="./Images/fg5.avif" class="card-img" alt="...">
+                        <div class="card-img-overlay  d-flex align-items-end justify-content-between">
+                            <p class="text-white bg-primary img-food p-1"> <b>70% OFF upto 100 </b></p>
+
+                            <p class="img-food p-1" style="background-color: #e7e7e7;"><b>20 min</b></p>
+                        </div>
+                    </div>
+                    <div class="row d-flex justify-content-between mt-2">
+                        <h5 class="col-8"> <b>Arsalan</b></h5>
+                        <div class="col-2 d-flex justify-content-center align-items-center bg-success text-white fg">
+                            4.8<i class="fa fa-star" aria-hidden="true"></i></div>
+                    </div>
+                    <div class="row d-flex justify-content-between text-muted">
+                        <p class="col-8 ">Biryani , kebab , chicken,...</p>
+                        <p class="col-4">₹300 for one</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="explore" class="mt-5">
+        <div class="container">
+            <h2><b>Explore options near me</b></h2>
+            <div class="row">
+                <div class="col-12 mt-3">
+                    <div class="accordion" id="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <h6>Popular restaurants near me</h6>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordion">
+                                <div class="accordion-body text-muted">
+                                    <li>Bakeries near me</li>
+                                    <li>Bars near me</li>
+                                    <li>Beverage Shops near me</li>
+                                    <li>Bhojanalya near me</li>
+                                    <li>Cafés near me</li>
+                                    <li>Casual Dining near me</li>
+                                    <li>Clubs near me</li>
+                                    <li>Cocktail Bars near me</li>
+                                    <li>Confectioneries near me</li>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <h6>Top Restaurant Chains</h6>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordion">
+                                <div class="accordion-body d-flex justify-content-around text-muted">
+                                    <p class="text-muted">Burger King</p>
+                                    <p class="text-muted">Domino's</p>
+                                    <p class="text-muted">Haldiram's</p>
+                                    <p class="text-muted">KFC</p>
+                                    <p class="text-muted">McDonald's</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+
+                                    <h6>Cities We Deliver To</h6>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordion">
+                                <div class="accordion-body row d-flex justify-content-around">
+                                    <p class="col-4 text-muted">Delhi</p>
+                                    <p class="col-4 text-muted">Patna</p>
+                                    <p class="col-4 text-muted">Ranchi</p>
+                                    <p class="col-4 text-muted">Kolkata</p>
+                                    <p class="col-4 text-muted">Pune</p>
+                                    <p class="col-4 text-muted">Hyderabad</p>
+                                    <p class="col-4 text-muted">Telangana</p>
+                                    <p class="col-4 text-muted">Bhagalpur</p>
+                                    <p class="col-4 text-muted">Muzaffarpur</p>
+                                    <p class="col-4 text-muted">Surat</p>
+                                    <p class="col-4 text-muted">Leh</p>
+                                    <p class="col-4 text-muted">Bangalore</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4" style="background-color:#003580;">
+        <div class="container">
+            <div class="row ">
+                <div class="col text-white text-center p-4">
+                    <h6><a href="" class="mt-2">About bookMyTrip.com</a>
+                        <a href="" class="mx-3 mt-2">Terms & Conditions</a>
+                        <a href="" class="mt-2">How we work</a>
+                        <a href="" class="mx-3 mt-2">Privacy & Cookie statement</a>
+                        <a href="" class="mt-2">Flights Help</a>
+                    </h6>
+                    <hr class="text-white">
+                    <p class="text-center text-white"> Copyright@2022 MS 2.O Inc.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

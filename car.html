@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book My Trip -Car rentals , offers</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./Images/logo.png">
+    <script src="./bootstrap.bundle.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+</head>
+
+<body>
+
+
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg bg-transparent">
+                        <a class="navbar-brand text-white" href="./index.html">Book
+                            <img src="./Images/logo.png" alt="logo">Trip
+                        </a>
+                        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#myNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="navbar-nav justify-content-center align-items-center">
+                                <i class="fa fa-globe mx-2"></i>
+                                <li class="nav-item">
+                                    <select class="bg-transparent form-control form-sm" id="selectbox">
+                                        <option value="">Select Country</option>
+                                        <option value="">India</option>
+                                        <option value="">USA</option>
+                                        <option value="">UK</option>
+                                    </select>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">List Your Property</a>
+                                </li>
+                                <li> <a class="btn" href="./registerLogin.html"><i class="fa fa-user-plus"
+                                            style="margin-right: 4px;"></i>Register</a>
+                                </li>
+                                <li> <a class="btn" href="./registerLogin.html"><i class="fa fa-sign-in"
+                                            style="margin-right: 4px;"></i>LogIn</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+
+            <div class="row py-2">
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn" href="./index.html">
+                        <i class="fa fa-bed"></i>
+                        Stays
+                    </a>
+                </div>
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn" href="flights.html">
+                        <i class="fa fa-plane"></i>
+                        Flight
+                    </a>
+                </div>
+
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn" href="./foods.html">
+                        <i class="fa fa-cutlery"></i>
+                        Foods
+                    </a>
+                </div>
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn activeBtn">
+                        <i class="fa fa-car"></i>
+                        Car Rentals
+                    </a>
+                </div>
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn" href="./airpotTaxi.html">
+                        <i class="fa fa-taxi"></i>
+                        Airpot Taxi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="main_div">
+        <div class="container">
+            <div class="row">
+                <div class="col mt-3">
+                    <h2><b>Car hire for any kind of trip</b> </h2>
+                    <p class="mb-3">Compare deals from the biggest car hire companies</p>
+
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="way">
+                        <label class="form-check-label">
+                            Return to same location
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="way">
+                        <label class="form-check-label">
+                            Return to different location
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-lg-7 col-12 borderY py-2">
+                    <input type="text" class="form-control" placeholder="🚗 Pick up location">
+                </div>
+                <div class="col-lg-2 col-sm-5 col-4 borderY py-2">
+                    <input type="date" class="form-control">
+                </div>
+                <div class="col-lg-2 col-sm-5 col-4   borderY py-2">
+                    <input type="date" class="form-control">
+                </div>
+                <button class="borderY btn col-lg-1  col-sm-2 col-4 py-2">Search</button>
+            </div>
+
+            <div class="form-check mt-3">
+                <input class="form-check-input" type="checkbox">
+                <label class="form-check-label">
+                    Driver aged between 30 - 65 ⓘ
+                </label>
+            </div>
+
+
+            <h2 class=" mt-4"> <b>Popular Car hire brands</h2></b>
+            <div class="row d-flex justify-content-around">
+                <div class="col-md-2 col-4 p-3 bd d-flex justify-content-center align-items-center mt-3">
+                    <img src="./Images/eu1.gif" alt="">
+                </div>
+                <div class="col-md-2 col-4 p-3 bd d-flex justify-content-center align-items-center mt-3 mx-2">
+                    <img src="./Images/eu2.gif" alt="">
+                </div>
+                <div class="col-md-2 col-4 p-3 bd d-flex justify-content-center align-items-center mt-3 ">
+                    <img src="./Images/eu3.gif" alt="">
+                </div>
+                <div class="col-md-2 col-4 p-3 bd d-flex justify-content-center align-items-center mt-3 mx-2">
+                    <img src="./Images/eu4.gif" alt="">
+                </div>
+            </div>
+
+
+            <h2 class="text my-4"> <b>Popular destinations for car hire</b></h2>
+            <div class="row mt-2" id="property">
+
+
+                <div class="col-md-3 col-sm-6 mt-2">
+                    <div class="card">
+                        <img src="./Images/ch1.webp" class="figure-img img-fluid rounded" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">London</h5>
+                            <p class="text-muted">Car hire 75 pick-up locations</p>
+                            <h6 class="text-muted"><i class="fa fa-car"></i> <span>From ₹ 2,962.67 per day</span></h6>
+                            <a href="" class="bl">Search rental car in London</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-2">
+                    <div class="card">
+                        <img src="./Images/ch2.webp" class="figure-img img-fluid rounded" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Paris</h5>
+                            <p class="text-muted">Car hire 90 pick-up locations</p>
+                            <h6 class="text-muted"><i class="fa fa-car"></i> <span>From ₹ 4184.67 per day</span></h6>
+                            <a href="" class="bl">Search rental car in Paris</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-2">
+                    <div class="card">
+                        <img src="./Images/ch3.webp" class="figure-img img-fluid rounded" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Madrid</h5>
+                            <p class="text-muted">Car hire 80 pick-up locations</p>
+                            <h6 class="text-muted"><i class="fa fa-car"></i> <span>From ₹ 599.67 per day</span></h6>
+                            <a href="" class="bl">Search rental car in Madrid</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6 mt-2">
+                    <div class="card">
+                        <img src="./Images/ch4.webp" class="figure-img img-fluid rounded" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Dubai</h5>
+                            <p class="text-muted">Car hire 50 pick-up locations</p>
+                            <h6 class="text-muted"><i class="fa fa-car"></i> <span>From ₹ 4,962.67 per day</span></h6>
+                            <a href="" class="bl">Search rental car in Dubai</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="offer" style="background-color: #e4f4ff;" class="mt-4">
+        <div class="container">
+            <div class="row pt-4 pb-4">
+                <div class=" col-sm-4 col-6">
+                    <span><i class="fa fa-headphones" aria-hidden="true"></i>
+                        <b> 24/7 customer service</b>
+                    </span>
+                    <p>We're here to help if you need</p>
+                </div>
+
+                <div class="col-sm-4 col-6">
+                    <span><i class="fa fa-check" aria-hidden="true"></i>
+                        <b> Free Cancellation</b>
+                    </span>
+                    <p>Available on most cars</p>
+                </div>
+                <div class="col-sm-4 col-6">
+                    <span><i class="fa fa-star-o" aria-hidden="true"></i>
+                        <b> 3.5+ million reviews</b>
+                    </span>
+                    <p>By real verified customers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="questions" class="mt-5">
+        <div class="container">
+            <h2><b>Frequently asked questions</b></h2>
+            <div class="row">
+                <div class="col-md-6 mt-3">
+                    <div class="accordion" id="accordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <h6>Why should I book a car rental in India with BookMyTrip.com?</h6>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordion">
+                                <div class="accordion-body">
+
+                                    <p>We make it easy to find a rental that’ll fit your needs. Here’s what we offer:
+                                    </p>
+                                    <li>Huge selection of cars – from compact vehicles to SUVs</li>
+                                    <li>Support in 30+ languages</li>
+                                    <li>Free cancellation up to 48 hours before pick-up time on most bookings.</li>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    <h6>What do I need to rent a car?</h6>
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>When you’re booking the car, you just need a debit or credit card.</p>
+                                    <p>At the rental counter, you’ll need:</p>
+                                    <li>Your passport</li>
+                                    <li>Your voucher</li>
+                                    <li>Each driver’s driving licence</li>
+                                    <li>The main driver’s credit card (some rental companies also accept debit cards,
+                                        but most don’t).</li>
+                                    <br>
+
+                                    <p>Important: Please make sure you check the car’s rental terms as well, as each
+                                        rental company has its own rules. For example? They might need to see some extra
+                                        ID. They might not accept certain types of credit card. Or they might not rent
+                                        to any driver who hasn’t held their driving licence for 36 months or more.</p>
+
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+
+                                    <h6>Am I old enough to rent a car?</h6>
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordion">
+                                <div class="accordion-body">
+                                    <p>Most companies will rent you a car if you’re at least 21 (and some will rent to
+                                        younger drivers). But if you’re under 25, you might still have to pay a ‘young
+                                        driver fee’.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-6 mt-3">
+                    <div class="accordion" id="accordion2">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                    <h6>Can I book a car for my partner, friend, colleague, etc?</h6>
+                                </button>
+                            </h2>
+                            <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                                data-bs-parent="#accordion2">
+                                <div class="accordion-body">
+
+                                    <p>Of course. Just put their details in the ‘Driver Details’ form when you’re
+                                        booking the car.
+                                    </p>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingFive">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                    <h6>Any tips on choosing the right car?
+                                    </h6>
+                                </button>
+                            </h2>
+                            <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                                data-bs-parent="#accordion2">
+                                <div class="accordion-body">
+
+                                    <li>Think about where you’re going. An SUV might be great for cruising down a Texas
+                                        freeway, but a smaller car’s probably much easier to drive in Rome.</li><br>
+                                    <li>See what other people think. You’ll find lots of reviews and ratings on our
+                                        site, so find out what other customers liked (and didn’t like) about each rental
+                                        company.</li><br>
+                                    <li>Don’t forget the gearbox. In some countries, nearly everyone drives a manual
+                                        car. In others, automatics are the norm. Make sure you rent one you can drive!
+                                    </li>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingSix">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+
+                                    <h6>Is the rental price all inclusive?
+                                    </h6>
+                                </button>
+                            </h2>
+                            <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                                data-bs-parent="#accordion2">
+                                <div class="accordion-body">
+                                    <p>The price you see includes the car, mandatory cover (e.g. Theft Protection and
+                                        Collision Damage Waiver) and fees that, if they apply, are usually payable at
+                                        pick-up (e.g. any one-way fees, airport surcharges or local taxes).</p>
+                                    <p>It also includes any extras you’ve already added (e.g. GPS or baby seats).</p>
+                                    <p>It doesn’t include any extra cover you buy when you get to the rental counter.
+                                    </p>
+                                    <p>Tip: There’s a full price breakdown on the Payment page.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sub-footer" class="mt-5">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col text-white">
+                    <h2 class="text-center">Save Time Save Money!</h2>
+                    <p class="text-muted text-center"><b>Sign Up and we'll send the Best Deals Shortly</b></p>
+                </div>
+                <div class="row my-3 justify-content-center">
+                    <div class="col-sm-7 col-11" style="margin-bottom: 0.25rem;">
+                        <input type="email" placeholder="Your Email Address" class="col-md-7 form-control"
+                            style="height: 3rem;">
+                    </div>
+                    <div class="col-sm-2 col-2">
+                        <button class="btn btn-primary btn-lg">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+            <div class="row ">
+                <div class="col text-white text-center py-3">
+                    <h6><a href="" class="mt-2">About bookMyTrip.com</a>
+                        <a href="" class="mx-3 mt-2">Terms & Conditions</a>
+                        <a href="" class="mt-2">How we work</a>
+                        <a href="" class="mx-3 mt-2">Privacy & Cookie statement</a>
+                        <a href="" class="mt-2">Flights Help</a>
+                    </h6>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6" id="footer-center">Copyright@2022 MS 2.O Inc.</div>
+                <div class="col-sm-6 ">
+                    <ul id="social-icons">
+                        <li><a href="" class="fa fa-facebook-square"></a></li>
+                        <li><a href="" class="fa fa-twitter-square"></a></li>
+                        <li><a href="" class="fa fa-linkedin-square"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

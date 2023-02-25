@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book My Trip -Taxi rentals , offers</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./Images/logo.png">
+    <script src="./bootstrap.bundle.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+</head>
+
+<body>
+
+
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg bg-transparent">
+                        <a class="navbar-brand text-white" href="./index.html">Book
+                            <img src="./Images/logo.png" alt="logo">Trip
+                        </a>
+                        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#myNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="navbar-nav justify-content-center align-items-center">
+                                <i class="fa fa-globe mx-2"></i>
+                                <li class="nav-item">
+                                    <select class="bg-transparent form-control form-sm" id="selectbox">
+                                        <option value="">Select Country</option>
+                                        <option value="">India</option>
+                                        <option value="">USA</option>
+                                        <option value="">UK</option>
+                                    </select>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">List Your Property</a>
+                                </li>
+                                <li> <a class="btn" href="./registerLogin.html"><i class="fa fa-user-plus"
+                                            style="margin-right: 4px;"></i>Register</a>
+                                </li>
+                                <li> <a class="btn" href="./registerLogin.html"><i class="fa fa-sign-in"
+                                            style="margin-right: 4px;"></i>LogIn</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+
+            <div class="row py-2">
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn" href="./index.html">
+                        <i class="fa fa-bed"></i>
+                        Stays
+                    </a>
+                </div>
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn" href="flights.html">
+                        <i class="fa fa-plane"></i>
+                        Flight
+                    </a>
+                </div>
+
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn" href="./foods.html">
+                        <i class="fa fa-cutlery"></i>
+                        Foods
+                    </a>
+                </div>
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn" href="./car.html">
+                        <i class="fa fa-car"></i>
+                        Car Rentals
+                    </a>
+                </div>
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn  activeBtn">
+                        <i class="fa fa-taxi"></i>
+                        Airpot Taxi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="main_div" style="background-color: #e7e7e7;" class="pt-2 pb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col mt-3">
+                    <h2><b>Book your airport taxi</b> </h2>
+                    <p class="mb-3">Easy airport transfers to and from your accommodation</p>
+
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="way">
+                        <label class="form-check-label">
+                            one-way
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="way">
+                        <label class="form-check-label">
+                            Return
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-lg-7 col-12 borderY py-2">
+                    <input type="text" class="form-control" placeholder="🚗 Enter Pick up location">
+                </div>
+                <div class="col-lg-2 col-sm-5 col-4 borderY py-2">
+                    <input type="date" class="form-control">
+                </div>
+                <div class="col-lg-2 col-sm-5 col-4   borderY py-2">
+                    <input type="time" class="form-control">
+                </div>
+                <button class="borderY btn col-lg-1  col-sm-2 col-4 py-2">Search</button>
+            </div>
+
+
+            <div class="row mt-5">
+                <div class=" col-sm-4 col-6">
+                    <span><i class="fa fa-plane" aria-hidden="true"></i>
+                        <b> Flight tracking</b>
+                    </span>
+                    <p>Your driver tracks your flight and waits for you if it's delayed</p>
+                </div>
+
+                <div class="col-sm-4 col-6">
+                    <span><i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                        <b> One clear price</b>
+                    </span>
+                    <p>Your price is confirmed upfront – no extra costs, no cash required</p>
+                </div>
+                <div class="col-sm-4 col-6">
+                    <span><i class="fa fa-check" aria-hidden="true"></i>
+                        <b> Tried and trusted</b>
+                    </span>
+                    <p>We work with professional drivers and have 24/7 customer care</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="airport">
+        <div class="container mt-5">
+            <h2 class="text-center"><b>Airport transfers made easy</b></h2>
+
+            <div class="row">
+                <div class="col-lg-6 mt-5">
+                    <div class="row">
+                        <div class="col-sm-2 col-3">
+                            <img src="./Images/cg1.svg" alt="">
+                        </div>
+                        <div class="col-sm-10 col-7">
+                            <h5 class="text-xs">Booking your airport taxi
+                            </h5>
+                            <p class="text-xs">Confirmation is immediate. If your plans change, you can cancel for free
+                                up to 24 hours
+                                before your scheduled pick-up time</p>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-sm-2 col-3">
+                            <img src="./Images/cg2.svg" alt="">
+                        </div>
+                        <div class="col-sm-10 col-7">
+                            <h5 class="text-xs">
+                                Meeting your driver
+                            </h5>
+                            <p class="text-xs"></p>You'll be met on arrival and taken to your vehicle. Your driver will
+                            track your flight, so they'll wait for you even if it's delayed</p>
+                        </div>
+                    </div>
+                    <div class="row mt-2">
+                        <div class="col-sm-2 col-3">
+                            <img src="./Images/cg3.svg" alt="">
+                        </div>
+                        <div class="col-md-10 col-7">
+                            <h5 class="text-xs">
+                                Arriving at your destination
+                            </h5>
+                            <p class="text-xs">Get to your destination quickly and safely – no waiting in line for a
+                                taxi, no figuring out public transport</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 mt-3">
+                    <p><b>Book online</b></p>
+                    <img src="./images/bg.svg" alt="">
+                    <p><b>Enjoy your trip!</b></p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div id="sub-footer" class="mt-5">
+        <div class="container">
+            <div class="row pt-5">
+                <div class="col text-white">
+                    <h2 class="text-center">Save Time Save Money!</h2>
+                    <p class="text-muted text-center"><b>Sign Up and we'll send the Best Deals Shortly</b></p>
+                </div>
+                <div class="row my-3 justify-content-center">
+                    <div class="col-sm-7 col-11" style="margin-bottom: 0.25rem;">
+                        <input type="email" placeholder="Your Email Address" class="col-md-7 form-control"
+                            style="height: 3rem;">
+                    </div>
+                    <div class="col-sm-2 col-2">
+                        <button class="btn btn-primary btn-lg">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    </div>
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6" id="footer-center">Copyright@2022 MS 2.O Inc.</div>
+                <div class="col-sm-6 ">
+                    <ul id="social-icons">
+                        <li><a href="" class="fa fa-facebook-square"></a></li>
+                        <li><a href="" class="fa fa-twitter-square"></a></li>
+                        <li><a href="" class="fa fa-linkedin-square"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+</body>
+
+</html>

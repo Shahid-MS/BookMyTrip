@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book My Trip -flights deals , offers</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./Images/logo.png">
+    <script src="./bootstrap.bundle.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+</head>
+
+<body>
+
+
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg bg-transparent">
+                        <a class="navbar-brand text-white" href="./index.html">Book
+                            <img src="./Images/logo.png" alt="logo">Trip
+                        </a>
+                        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#myNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="navbar-nav justify-content-center align-items-center">
+                                <i class="fa fa-globe mx-2"></i>
+                                <li class="nav-item">
+                                    <select class="bg-transparent form-control form-sm" id="selectbox">
+                                        <option value="">Select Country</option>
+                                        <option value="">India</option>
+                                        <option value="">USA</option>
+                                        <option value="">UK</option>
+                                    </select>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">List Your Property</a>
+                                </li>
+                                <li> <a class="btn" href="./registerLogin.html"><i class="fa fa-user-plus"
+                                            style="margin-right: 4px;"></i>Register</a>
+                                </li>
+                                <li> <a class="btn" href="./registerLogin.html"><i class="fa fa-sign-in"
+                                            style="margin-right: 4px;"></i>LogIn</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+
+            <div class="row py-2">
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn" href="./index.html">
+                        <i class="fa fa-bed"></i>
+                        Stays
+                    </a>
+                </div>
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn activeBtn">
+                        <i class="fa fa-plane"></i>
+                        Flight
+                    </a>
+                </div>
+
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn" href="./foods.html">
+                        <i class="fa fa-cutlery"></i>
+                        Foods
+                    </a>
+                </div>
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn" href="./car.html">
+                        <i class="fa fa-car"></i>
+                        Car Rentals
+                    </a>
+                </div>
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn" href="./airpotTaxi.html">
+                        <i class="fa fa-taxi"></i>
+                        Airpot Taxi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="main_div">
+        <div class="container">
+            <div class="row">
+                <div class="col mt-3">
+                    <h2><b>Compare and Book Flights with ease</b> </h2>
+                    <p class="mb-3">Discover your next dream destination</p>
+
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="way">
+                        <label class="form-check-label">
+                            Round Trip
+                        </label>
+                    </div>
+                    <div class="form-check-inline">
+                        <input class="form-check-input" type="radio" name="way">
+                        <label class="form-check-label">
+                            One way
+                        </label>
+                    </div>
+                    <li class="form-check-inline mt-2">
+                        <select class="form-control form-sm">
+                            <option value="">Economy</option>
+                            <option value="">Premium Economy</option>
+                            <option value="">Business</option>
+                            <option value="">First Class</option>
+                        </select>
+                    </li>
+                    <div class="form-check-inline mt-2">
+                        <input type="number" class="form-control " max="10" min="1" placeholder="Adult">
+                    </div>
+
+                    <div class="form-check-inline mt-2">
+                        <input type="number" class="form-control " max="5" min="0" placeholder="Child">
+                    </div>
+                    <div class="form-check-inline mt-2">
+                        <input class="form-check-input" type="checkbox">
+                        <label class="form-check-label">
+                            Direct flights only
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-lg-4 col-6 borderY py-2">
+                    <input type="text" class="form-control" placeholder="Where from ?">
+                </div>
+                <div class="col-lg-4 col-6 borderY py-2">
+                    <input type="text" class="form-control" placeholder="Where to ?">
+                </div>
+                <div class="col-lg-3 col-8 borderY py-2">
+                    <input type="date" class="form-control">
+                </div>
+                <button class="borderY btn col-lg-1 col-4 py-2">Search</button>
+            </div>
+
+
+            <div class=" row mt-5" id="planer">
+                <h2><b>Popular flights near you</b></h2>
+                <p class="text-muted">Find deals on domestic and international flights</p>
+
+                <ul class="nav nav-tabs mt-2" id="myTab">
+                    <li class="nav-item">
+                        <button class="nav-link active text-black" id="romance-tab" data-bs-toggle="tab"
+                            data-bs-target="#international-tab-pane" type="button" role="tab">
+                            International</button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="nav-link text-black" id="beach-tab" data-bs-toggle="tab"
+                            data-bs-target="#domestic-tab-pane" type="button" role="tab">
+                            Domestic</button>
+                    </li>
+                </ul>
+                <div class="tab-content mt-4" id="myTabContent">
+
+                    <div class="tab-pane fade show active" id="international-tab-pane" role="tabpanel" tabindex="0">
+                        <div class="row">
+                            <div class="col-sm-3 col-6">
+                                <figure class="figure">
+                                    <img src="./Images/k1.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Kolkata to Guwahati</h6>
+                                        <p class="text-muted">28 Feb - 7 Mar - Round Trip</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-sm-3 col-6">
+                                <figure class="figure">
+                                    <img src="./Images/k2.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Kolkata to Silliguri</h6>
+                                        <p class="text-muted">28 Feb - 7 Mar - Round Trip</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-sm-3 col-6">
+                                <figure class="figure">
+                                    <img src="./Images/k3.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Kolkata to Bhuneshwar</h6>
+                                        <p class="text-muted">28 Feb - 8 Mar - Round Trip</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-sm-3 col-6">
+                                <figure class="figure">
+                                    <img src="./Images/k4.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Kolkata to Pune</h6>
+                                        <p class="text-muted">28 Feb - 7 Mar - Round Trip</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="tab-pane fade show" id="domestic-tab-pane" role="tabpanel" tabindex="0">
+                        <div class="row">
+                            <div class="col-sm-3 col-6">
+                                <figure class="figure">
+                                    <img src="./Images/k11.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Kolkata to Male City</h6>
+                                        <p class="text-muted">28 Feb - 7 Mar - Round Trip</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-sm-3 col-6">
+                                <figure class="figure">
+                                    <img src="./Images/k12.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Kolkata to Bangkok</h6>
+                                        <p class="text-muted">28 Feb - 7 Mar - Round Trip</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-sm-3 col-6">
+                                <figure class="figure">
+                                    <img src="./Images/k13.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Kolkata to Phuket Town</h6>
+                                        <p class="text-muted">28 Feb - 8 Mar - Round Trip</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-sm-3 col-6">
+                                <figure class="figure">
+                                    <img src="./Images/k14.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Kolkata to America</h6>
+                                        <p class="text-muted">28 Feb - 7 Mar - Round Trip</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="offer" style="background-color: #e7e7e7;">
+        <div class="container">
+            <div class="row pt-5 pb-3">
+                <div class=" col-sm-4 col-6">
+                    <span><i class="fa fa-search-plus" aria-hidden="true"></i>
+                        <b> Huge Collection</b>
+                    </span>
+                    <p>Easily compare 1000s of flights, all in one place</p>
+                </div>
+
+                <div class="col-sm-4 col-6">
+                    <span><i class="fa fa-inr" aria-hidden="true"></i>
+                        <b> No Hidden Fees</b>
+                    </span>
+                    <p>Always know exactly what you’re paying for</p>
+                </div>
+                <div class="col-sm-4 col-6">
+                    <span><i class="fa fa-plane" aria-hidden="true"></i>
+                        <b> More flexibility</b>
+                    </span>
+                    <p>Keep your travel dates open with flexible plane ticket options</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="questions" class="mt-5">
+        <div class="container">
+            <h2> <b> Frequently Asked Questions</h2></b>
+            <div class="row d-flex justify-content-around">
+                <div class="col-md-4 col-12 p-3 bd mt-3 text-xs">
+                    <h6><b>How do I find the cheapest flights on bookMyTrip.com?</b></h6>
+                    <p>You can sort flights by price to see them from cheapest to most expensive. To find the cheapest
+                        flights, you also need to consider factors such as when you are booking and when you want to
+                        travel.</p>
+                </div>
+                <div class="col-md-3 col-12 p-3 bd mt-4 text-xs">
+                    <h6><b>Can I book one way flight tickets on bookMyTrip.com?</b></h6>
+                    <p>Yes, you can book one way, round trip and multi city flights on our site.</p>
+                </div>
+                <div class="col-md-4 col-12 p-3 bd mt-4 text-xs">
+                    <h6><b>How do I find the cheapest flights on bookMyTrip.com?</b></h6>
+                    <p>You can sort flights by price to see them from cheapest to most expensive. To find the cheapest
+                        flights, you also need to consider factors such as when you are booking and when you want to
+                        travel.</p>
+                </div>
+                <div class="col-md-4 col-12 p-3 bd mt-4 text-xs">
+                    <h6><b>What is a flexible ticket?</b></h6>
+                    <p>A flexible ticket allows you to change your flight with the same airline company by only paying
+                        the fare and tax difference. It can only be used for one confirmed change. You are able to add
+                        the flexible ticket when booking your flight.</p>
+                </div>
+                <div class="col-md-3 col-12 p-3 bd mt-4 text-xs">
+                    <h6><b>Do flights get cheaper closer to departure?</b></h6>
+                    <p>Generally, flight prices are more likely to increase the closer you get to your flight date.</p>
+                </div>
+                <div class="col-md-4 col-12 p-3 bd mt-4 text-xs">
+                    <h6><b>Does bookMyTrip.com charge credit card fees?</b></h6>
+                    <p>
+                        No, we don't charge any credit card fees. You can always see exactly what you’re paying for in
+                        the price breakdown when you review your booking.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mt-4" style="background-color:#003580;">
+        <div class="container">
+            <div class="row ">
+                <div class="col text-white text-center p-3">
+                    <h6><a href="" class="mt-2">About bookMyTrip.com</a>
+                        <a href="" class="mx-3 mt-2">Terms & Conditions</a>
+                        <a href="" class="mt-2">How we work</a>
+                        <a href="" class="mx-3 mt-2">Privacy & Cookie statement</a>
+                        <a href="" class="mt-2">Flights Help</a>
+                    </h6>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+
+</html>

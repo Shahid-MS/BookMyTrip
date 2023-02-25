@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book My Trip - Homepage</title>
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="icon" href="./Images/logo.png">
+    <script src="./bootstrap.bundle.min.js"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital@1&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+</head>
+
+<body>
+
+
+    <div id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-expand-lg bg-transparent">
+                        <a class="navbar-brand text-white" href="#">Book
+                            <img src="./Images/logo.png" alt="logo">Trip
+                        </a>
+                        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#myNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="myNavbar">
+                            <ul class="navbar-nav justify-content-center align-items-center">
+                                <i class="fa fa-globe mx-2"></i>
+                                <li class="nav-item">
+                                    <select class="bg-transparent form-control form-sm" id="selectbox">
+                                        <option value="">Select Country</option>
+                                        <option value="">India</option>
+                                        <option value="">USA</option>
+                                        <option value="">UK</option>
+                                    </select>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link disabled">List Your Property</a>
+                                </li>
+                                <li> <a class="btn" href="./registerLogin.html"><i class="fa fa-user-plus"
+                                            style="margin-right: 4px;"></i>Register</a>
+                                </li>
+                                <li> <a class="btn" href="./registerLogin.html"><i class="fa fa-sign-in"
+                                            style="margin-right: 4px;"></i>LogIn</a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+
+            <div class="row py-2">
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn activeBtn">
+                        <i class="fa fa-bed"></i>
+                        Stays
+                    </a>
+                </div>
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn" href="./flights.html">
+                        <i class="fa fa-plane"></i>
+                        Flight
+                    </a>
+                </div>
+
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn" href="./foods.html">
+                        <i class="fa fa-cutlery"></i>
+                        Foods
+                    </a>
+                </div>
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn" href="car.html">
+                        <i class="fa fa-car"></i>
+                        Car Rentals
+                    </a>
+                </div>
+                <div class="col col-xs sb">
+                    <a class="btn headerBtn" href="./airpotTaxi.html">
+                        <i class="fa fa-taxi"></i>
+                        Airpot Taxi
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="body">
+
+        <div id="carousel" class="carousel carousel-dark slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+                    aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+
+                <div class="carousel-item active" data-bs-interval="3000">
+                    <img src="./Images/pexels-pierre-blaché-3369102.jpg" class="d-block w-100 .img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="text-white">Your Dream Destination</h1>
+                        <p class="text-white">Now At an Affordable price $</p>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./Images/pexels-asad-photo-maldives-1198839.jpg" class="d-block w-100 .img-fluid"
+                        alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1>A Better Stay with Ur better half</h1>
+                    </div>
+                </div>
+                <div class="carousel-item" data-bs-interval="3000">
+                    <img src="./Images/pexels-flo-maderebner-869258.jpg" class="d-block w-100 .img-fluid" alt="...">
+                    <div class="carousel-caption d-none d-md-block" style="color: #003580;;">
+                        <h1>Your Destination is now a click Away</h1>
+                        <p>Book Now and Relax!!</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-6 borderY py-2">
+                    <input type="text" class="form-control" placeholder="Where are you going?">
+                </div>
+                <div class="col-lg-3 col-6 borderY py-2">
+                    <div class="row">
+                        <div class="col-6" style="padding: 0.3rem;"><input type="date" class="form-control col-6"
+                                placeholder="arrival">
+                        </div>
+                        <div class="col-6" style="padding: 0.3rem;"> <input type="date" class="form-control col-6">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-3 col-6 borderY py-2">
+                    <div class="row">
+                        <div class="col-2 my-2">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                        <div class="col-5 p-0">
+
+                            <input type="number" class="form-control " placeholder="Adult" max="10" min="1">
+                        </div>
+                        <div class="col-5">
+                            <input type="number" class="form-control " placeholder="Children" max="5" min="0">
+                        </div>
+                    </div>
+                </div>
+                <button class="borderY btn col-lg-1 col-6 py-2">Search</button>
+                <div class="form-check col my-2">
+                    <input class="form-check-input" type="checkbox">
+                    <label class="form-check-label">
+                        I'm Traveling for Work
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="container my-4">
+            <div class="row ">
+                <h1>Offers</h1>
+                <p class="text-muted">Promation Deals and special offers for You</p>
+            </div>
+
+
+            <div class="row justify-content-around">
+                <div class="col-lg-5 col-11">
+                    <div class="row my-2 p-3" id="offersCol">
+                        <div class="col-8">
+                            <h5>
+                                Fly away to your dream Holiday
+                            </h5>
+                            <p class="text-muted"> Get inspired, compare and book flights with more flexibility</p>
+                            <button class="btnB"> Search For Flight</button>
+                        </div>
+                        <div class="col-4">
+                            <img src="./Images/aeroplane.jpeg" alt="" class="img-fluid">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-11" id="offersBg">
+                    <h4 class="text-white my-4">Escape for a while</h4>
+                    <p class="text-white ">
+                        Enjoy the freedom of a monthly stay on Book My Trip</p>
+                    <button class="btnB my-2"> Discover Monthly Stays</button>
+                </div>
+            </div>
+
+
+            <div class="row my-1" id="property">
+                <h1 class="text my-4">Browse by property type</h1>
+
+                <div class="col-md-3 col-6">
+                    <figure class="figure">
+                        <img src="./Images/p1.jpeg" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption text-black">
+                            <h4>Hotels</h4>
+                            <p class="text-muted">1003 hotels</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <figure class="figure">
+                        <img src="./Images/p2.jpeg" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption text-black">
+                            <h4>Apartments</h4>
+                            <p class="text-muted">200523 apartments</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 col-6">
+                    <figure class="figure">
+                        <img src="./Images/p3.jpeg" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption text-black">
+                            <h4>Resorts</h4>
+                            <p class="text-muted">208657 resorts</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 col-6">
+                    <figure class="figure">
+                        <img src="./Images/p4.jpeg" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption text-black">
+                            <h4>Villas</h4>
+                            <p class="text-muted">4667238 villas</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+            </div>
+
+
+
+            <div class="row" id="exploreIndia">
+                <h1 class=" my-4">Explore India</h1>
+
+                <div class="col-lg-2 col-sm-4 col-6 ">
+                    <figure class="figure">
+                        <img src="./Images/i1.jpg" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption text-black">
+                            <h5>Goa</h5>
+                            <p class="text-muted">4353 properties</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <figure class="figure">
+                        <img src="./Images/i2.jpg" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption text-black">
+                            <h5>Mumbai</h5>
+                            <p class="text-muted">2456 properties</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <figure class="figure">
+                        <img src="./Images/i3.jpg" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption text-black">
+                            <h5>New Delhi</h5>
+                            <p class="text-muted">3421 properties</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <figure class="figure">
+                        <img src="./Images/i4.jpg" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption text-black">
+                            <h5>Jaipur</h5>
+                            <p class="text-muted">1234 properties</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <figure class="figure">
+                        <img src="./Images/i5.jpg" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption text-black">
+                            <h5>Bangalore</h5>
+                            <p class="text-muted">2453 properties</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-6">
+                    <figure class="figure">
+                        <img src="./Images/i6.jpg" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption text-black">
+                            <h5>North Goa</h5>
+                            <p class="text-muted">321 properties</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+
+
+            <div class=" row my-3" id="planer">
+                <h2>Quick and easy trip planner</h2>
+                <p class="text-muted"> Pick a vibe and explore the top destinations in india</p>
+
+                <ul class="nav nav-tabs" id="myTab">
+                    <li class="nav-item">
+                        <button class="nav-link active text-black" id="romance-tab" data-bs-toggle="tab"
+                            data-bs-target="#romance-tab-pane" type="button" role="tab"><i class="fa fa-heart-o"></i>
+                            Romance</button>
+                    </li>
+
+                    <li class="nav-item">
+                        <button class="nav-link text-black" id="beach-tab" data-bs-toggle="tab"
+                            data-bs-target="#beach-tab-pane" type="button" role="tab"><i class="fa fa-umbrella"></i>
+                            Beach</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link  text-black" id="city-tab" data-bs-toggle="tab"
+                            data-bs-target="#city-tab-pane" type="button" role="tab"><i class="fa fa-building-o"></i>
+                            City</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link text-black" id="outdoor-tab" data-bs-toggle="tab"
+                            data-bs-target="#outdoor-tab-pane" type="button" role="tab"><i class="fa fa-motorcycle"></i>
+                            Outdoors</button>
+                    </li>
+                </ul>
+
+                <div class="tab-content my-4" id="myTabContent">
+                    <div class="tab-pane fade show active" id="romance-tab-pane" role="tabpanel" tabindex="0">
+
+                        <div class="row">
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/r1.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Mandarmoni</h6>
+                                        <p class="text-muted">118 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/r2.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Ranchi</h6>
+                                        <p class="text-muted">324 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/r3.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Silliguri</h6>
+                                        <p class="text-muted">465 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/r4.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Patna</h6>
+                                        <p class="text-muted">475 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/r5.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Allahabad</h6>
+                                        <p class="text-muted">737 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/r6.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Nagpur</h6>
+                                        <p class="text-muted">971 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="beach-tab-pane" role="tabpanel" tabindex="0">
+                        <div class="row">
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/b1.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Digha</h6>
+                                        <p class="text-muted">127 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/b2.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Puri</h6>
+                                        <p class="text-muted">402 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/b3.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Vishakhapatnam</h6>
+                                        <p class="text-muted">752 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/b4.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Havelock Island</h6>
+                                        <p class="text-muted">1,266 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/b5.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Port Blair</h6>
+                                        <p class="text-muted">1,295 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/b6.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Rishikesh</h6>
+                                        <p class="text-muted">1,310 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="city-tab-pane" role="tabpanel" tabindex="0">
+                        <div class="row">
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/c1.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Kolkata</h6>
+                                        <p class="text-muted">4.1 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/c2.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Bhuneshwar</h6>
+                                        <p class="text-muted">362 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/c3.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Bodh Gaya</h6>
+                                        <p class="text-muted">420 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/c4.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Varanasi</h6>
+                                        <p class="text-muted">672 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/c5.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Khajuraho</h6>
+                                        <p class="text-muted">896 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/c6.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Orchha</h6>
+                                        <p class="text-muted">1,036 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="outdoor-tab-pane" role="tabpanel" tabindex="0">
+                        <div class="row">
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/o1.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Cherrapunji</h6>
+                                        <p class="text-muted">458 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/o2.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Shillong</h6>
+                                        <p class="text-muted">492 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/o3.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Darjeeling</h6>
+                                        <p class="text-muted">501 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/o4.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Kalimpong</h6>
+                                        <p class="text-muted">505 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/o5.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Gangtok</h6>
+                                        <p class="text-muted">534 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                            <div class="col-md-2 col-4">
+                                <figure class="figure">
+                                    <img src="./Images/o6.jpg" class="figure-img img-fluid rounded" alt="...">
+                                    <figcaption class="figure-caption text-black">
+                                        <h6>Ramnagar</h6>
+                                        <p class="text-muted">1,197 Km Away</p>
+                                    </figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="home-guests">
+                <h2 class="my-4">Home Guests love</h2>
+                <div class="col-md-3 col-6">
+                    <figure class="figure">
+                        <img src="./Images/g1.webp" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption text-black">
+                            <h5>3 Epoques Apartments by Prague Residences</h5>
+                            <p class="text-muted" style="margin-top: -0.3rem;">Prague 1,Crench Republic</p>
+                            <p class="text-muted" style="margin-top: -0.8rem;">Starting from <b class="text-black">₹
+                                    8,396</b></p>
+                            <p class="text-muted" style="margin-top: -0.8rem;"><button class="btn btn-primary btn-sm"
+                                    style="padding: -0.5rem;">8.7</button> Fabulous • 402 reviews</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <figure class="figure">
+                        <img src="./Images/g2.webp" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption text-black">
+                            <h5>Villa Domina</h5>
+                            <p class="text-muted" style="margin-top: -0.3rem;">Split City Cente,Croatia</p>
+                            <p class="text-muted" style="margin-top: -0.8rem;">Starting from <b class="text-black">₹
+                                    3,954</b></p>
+                            <p class="text-muted" style="margin-top: -0.8rem;"><button class="btn btn-primary btn-sm"
+                                    style="padding: -0.5rem;">9.4</button> Superb • 1029 reviews</p>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="col-md-3 col-6">
+                    <figure class="figure">
+                        <img src="./Images/g3.webp" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption text-black">
+                            <h5>7Seasons Apartments Budapest</h5>
+                            <p class="text-muted" style="margin-top: -0.3rem;">06, Hungry Budapest</p>
+                            <p class="text-muted" style="margin-top: -0.8rem;">Starting from <b class="text-black">₹
+                                    6,054</b></p>
+                            <p class="text-muted" style="margin-top: -0.8rem;"><button class="btn btn-primary btn-sm"
+                                    style="padding: -0.5rem;">8.8</button> Fabulous • 7239 reviews</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="col-md-3 col-6">
+                    <figure class="figure">
+                        <img src="./Images/g4.webp" class="figure-img img-fluid rounded" alt="...">
+                        <figcaption class="figure-caption text-black">
+                            <h5>Oriente Palace Apartments</h5>
+                            <p class="text-muted" style="margin-top: -0.3rem;">Centro spain</p>
+                            <p class="text-muted" style="margin-top: -0.8rem;">Starting from <b class="text-black">₹
+                                    7184</b></p>
+                            <p class="text-muted" style="margin-top: -0.8rem;"><button class="btn btn-primary btn-sm"
+                                    style="padding: -0.5rem;">8.7</button> Fabulous • 2505 reviews</p>
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+
+
+            <div class="row py-3 d-flex justify-content-center align-items-center" id="discount">
+                <div class="col-sm-3 col-4">
+                    <img src="./Images/genius.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-sm-9 col-12 text-center">
+                    <h1>Get Instant Discounts</h1>
+                    <p class="text-muted">Simply sign in into your Book my Trip Account and look for blue Genius logo to
+                        save</p>
+                    <button class="btn btn-outline mt-2 bColor">Log In</button>
+                    <button class="btn btn-primary mt-2 mx-3" style="border: none;">Register</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="sub-footer">
+        <div class="container">
+            <div class="row py-5">
+                <div class="col text-white">
+                    <h2 class="text-center">Save Time Save Money!</h2>
+                    <p class="text-muted text-center"><b>Sign Up and we'll send the Best Deals Shortly</b></p>
+                </div>
+                <div class="row my-3 justify-content-center">
+                    <div class="col-sm-7 col-11" style="margin-bottom: 0.25rem;">
+                        <input type="email" placeholder="Your Email Address" class="col-md-7 form-control"
+                            style="height: 3rem;">
+                    </div>
+                    <div class="col-sm-2 col-2">
+                        <button class="btn btn-primary btn-lg">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-sidebar">
+        <div class="container text-white">
+            <div class="row p-4">
+                <div class="col-sm-6 col-md-4">
+                    <div class="footer-widget">
+                        <h4>About Company</h4>
+                        <p>
+                            Book My Trip is part of Booking Holdings Inc., the world leader in online travel and related
+                            services.
+                        </p>
+                        <p>
+                            Book My Trip is an Indian online travel company founded by MS 2.O Headquartered in Kolkata,
+                            West Bengal, the company provides online travel services including airline tickets, domestic
+                            and international holiday packages, hotel reservations, rail, and bus tickets.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="footer-widget">
+                        <h4>Latest News</h4>
+                        <ul class="latest-news">
+                            <li><a href="">Book My Trip - A new travelling Option</a>
+                            </li>
+                            <li><a href="">Save with Book my Trip</a></li>
+                            <li><a href="">Hotels To Tickets: Travel Return Fuels Growth For Online Travel
+                                    Aggregators</a></li>
+                            <li><a href="">Villas To Luxury Apartments: Picking Homestays Over Hotels Is More Fun</a>
+                            </li>
+                            <li><a href="">BookMyTrip Q4 Profit Rises 8% To $12 Mn; Gross Bookings Exceed $1 Bn</a></li>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                    <div class="footer-widget">
+                        <h4>Company Address</h4>
+                        <address>
+                            <b>MS 2.O Inc.</b><br>
+                            601 South City <br>
+                            Kolkata, West Bengal India 700101
+                            <br> P.no : +91 9534175088
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6" id="footer-center">Copyright@2022 MS 2.O Inc.</div>
+                <div class="col-sm-6 ">
+                    <ul id="social-icons">
+                        <li><a href="" class="fa fa-facebook-square"></a></li>
+                        <li><a href="" class="fa fa-twitter-square"></a></li>
+                        <li><a href="" class="fa fa-linkedin-square"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
